@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'dfds-bold';
+  src:	url('dfds-fonts/dfds-bold.eot?#iefix') format('embedded-opentype'),
+  		url('dfds-fonts/dfds-bold.woff') format('woff'),
+  		url('dfds-fonts/dfds-bold.ttf')  format('truetype'),
+  		url('dfds-fonts/dfds-bold.svg#dfds-bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dfds-light';
+  src:	url('dfds-fonts/dfds-light.eot?#iefix') format('embedded-opentype'),
+  		url('dfds-fonts/dfds-light.woff') format('woff'),
+  		url('dfds-fonts/dfds-light.ttf')  format('truetype'),
+  		url('dfds-fonts/dfds-light.svg#dfds-light') format('svg');
+    
+  font-weight: normal;
+  font-style: normal;
+}
