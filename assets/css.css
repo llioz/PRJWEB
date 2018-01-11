@@ -94,7 +94,7 @@ section > h2{
 section article {
     max-width: 30vw;
     background-color: #fff;
-    height: 20em;
+    padding-bottom: 1em;
 }
 
 section article:nth-of-type(2){
