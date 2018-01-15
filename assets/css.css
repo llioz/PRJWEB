@@ -15,9 +15,6 @@ a{
 }
 
 
-    
-
-
 h1{
     
     font-family: "dfds-bold";
@@ -26,12 +23,37 @@ h1{
     
 }
 
+button {
+    
+    border: none;
+    text-decoration: none;
+}
+/*Titel*/
+
 main section:nth-of-type(1){
     
     display: flex;
     justify-content: center;
 
 }
+
+/*********************/
+
+/*Verder lezen section*/
+
+main section:nth-of-type(2)>div:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline; 
+    padding: 0 1em  0 1em;
+    
+
+}
+
+/********************/
+
+/*header*/
 
 header img {
     height: 5em;
@@ -46,11 +68,16 @@ body > header {
     background-color: white;
     height: 6em;
     justify-content: space-between;
+    align-items: center;
     align-content: flex-start;
     padding: 0 2em;
     box-sizing: border-box;
     
 }
+
+/***********************/
+
+/*navigatie*/
 
 nav,
 li {
@@ -58,30 +85,26 @@ li {
     margin-left: 1.4em;
 }
 
-header {
-    height: 5em;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-   
-}
-.flex-container-verderlezen {
-    
-     
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline; 
-    padding: 0 1em  0 1em;
-    
-    
-}
+/**********/
 
-section{
+
+
+/*Padding tussen de sections*/
+
+main section:nth-of-type(2) {
     padding: 3em 0 0 0;
 }
+main section:nth-of-type(3) {
+    padding: 3em 0 0 0;
+}
+main section:nth-of-type(4) {
+    padding: 1em 0 0 0;
+}
+
+
+/****************/
+
+/*verder lezen titel */
 
 section > h2{
     
@@ -90,35 +113,81 @@ section > h2{
     
 }
 
+/********************/
 
+/*Alle blokken*/
 section article {
     max-width: 30vw;
     background-color: #fff;
     padding-bottom: 1em;
 }
 
-section article:nth-of-type(2){
-     width: 30vw;
-    margin: 0 1em 0  1em;
-    
+/***************/
+
+/*Header buttons*/
+main section:nth-of-type(2)>div>article:nth-child(1)>header>button{
+    background-color: rgb(246, 134, 31, 0.1);
+    height: 4em;
+    width: 4em;
+    cursor: pointer;
+    overflow: hidden;
+    color: white
+}
+main section:nth-of-type(2)>div>article:nth-child(2)>header>button{
+    background-color: #f6861f;
+    height: 4em;
+    width: 4em;
+    cursor: pointer;
+    overflow: hidden;
+    color: white
+}
+main section:nth-of-type(2)>div>article:nth-child(3)>header>button{
+    background-color: #f6861f;
+    height: 4em;
+    width: 4em;
+    cursor: pointer;
+    overflow: hidden;
+    color: white
 }
 
-.test1 {
+
+/*Headers in de verder lezen blokken*/
+main section:nth-of-type(2)>div>article:nth-child(1)>header{
+    
     background-image: url('vrst.jpg');
     background-size: cover;
     height: 10rem;
+    
 }
 
-.test2 {
+main section:nth-of-type(2)>div>article:nth-of-type(2) {
+    width: 30vw;
+    margin: 0 1em 0  1em;
+}
+
+main section:nth-of-type(2)>div>article:nth-child(2)>header{
+    
     background-image: url('alzhmr.jpg');
     background-size: cover;
     height: 10rem;
+    
+    
 }
-.test3 {
+
+main section:nth-of-type(2)>div>article:nth-child(3)>header{
+    
     background-image: url('kndr.jpg');
     background-size: cover;
     height: 10rem;
+    
+    
 }
+
+
+/***********************************/
+
+/*Tekst in alle blokken*/
+
 
 article > div > p, h3   {
     
@@ -133,6 +202,10 @@ h3{
     
 }
 
+/********************/
+
+/*lezen Knoppen*/
+
 article > div > footer > a {
     
     background-color: orange;
@@ -140,67 +213,43 @@ article > div > footer > a {
      padding: 0.5em;
 }
 
-.flex-container-footer{
+/*************/
+
+/*Footer blokken*/
+
+article>div>footer{
     
     display: flex;
   justify-content: flex-end;
     margin-right: 0.5em;
-
-}
-
-/*
-.flex-container-search{
-     display: flex;
-  justify-content: center;
-    
     
 }
-*/
 
-.wrap{
+/***************/
+
+/*Search section */
+
+main section:nth-of-type(3){
+    display: flex;
+    align-items:  center;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #fff;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+main section:nth-child(3) :nth-child(1){
     width: 100%;
-    padding: 1em;
+    margin-top: -15px;
     
 }
-/*
 
-.searchButton {
-  right: -50px;
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.searchTerm:focus{
-  color: #00B4CC;
-}
-
-.searchTerm {
-  float: left;
-  width: 100%;
-  border: 3px solid #00B4CC;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
-}
-
-.search {
-  width: 100%;
-  position: relative
+main section:nth-child(3) :nth-child(2){
     
 }
-*/
-
-.searchTerm{
-    width: 50px;
+main section:nth-child(3) input{
+     width: 50px!important;
     box-sizing: border-box;
     font-size: 16px;
     background-color: white;
@@ -211,21 +260,16 @@ article > div > footer > a {
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     border: 0px solid #ccc;
+    
 }
-
-.searchTerm:focus{
-    width: 60%;
+main section:nth-child(3) input:focus{
+    width: 60%!important;
     border: 2px solid #ccc;
+    
 }
 
-.flex-container-search{
-    display: flex;
-    align-items:  center;
-    width: 100%;
-    background-color: white;
-    height: 50px;
-   margin-top: 20px;
-}
+/*******************/
+
 
 .dropbtn {
     background-color: orange;
@@ -332,6 +376,65 @@ article > div > footer > a {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+
+main section:nth-of-type(4)>div:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline; 
+    padding: 0 1em  0 1em;
+    box-sizing: border-box;
+    
+
+}
+
+main section:nth-of-type(4)>div>article:nth-of-type(2) {
+    width: 30vw;
+    margin: 0 1em 0  1em;
+}
+main section:nth-of-type(4)>div>article:nth-of-type(3) {
+    width: 30vw;
+    margin: 0 1em 0  0em;
+}
+
+main section:nth-of-type(4)>div>article:nth-child(1)>header{
+    
+    background-image: url('vrst.jpg');
+    background-size: cover;
+    height: 10rem;
+    
+    
+}
+
+main section:nth-of-type(4)>div>article:nth-child(2)>header{
+    
+    background-image: url('alzhmr.jpg');
+    background-size: cover;
+    height: 10rem;
+    
+    
+}
+
+main section:nth-of-type(4)>div>article:nth-child(3)>header{
+    
+    background-image: url('kndr.jpg');
+    background-size: cover;
+    height: 10rem;
+    
+    
+}
+
+main section:nth-of-type(4)>div>article:nth-child(4)>header{
+    
+    background-image: url('kndr.jpg');
+    background-size: cover;
+    height: 10rem;
+    
+    
+}
+
+
 
 /*
 .dropdown-content:hover{
