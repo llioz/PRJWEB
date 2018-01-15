@@ -28,6 +28,7 @@ button {
     border: none;
     text-decoration: none;
 }
+
 /*Titel*/
 
 main section:nth-of-type(1){
@@ -73,6 +74,20 @@ body > header {
     padding: 0 2em;
     box-sizing: border-box;
     
+}
+
+.bounce {
+  position:relative;
+    z-index: 999;
+  bottom:0;
+  -webkit-animation:bounce 1s 1;
+}
+
+@-webkit-keyframes bounce {
+  0%       { left:-50px; }
+  25%, 75% { left:0px; }
+  50%      { left:0px; }
+  100%     {left:0px;}
 }
 
 /***********************/
@@ -126,12 +141,13 @@ section article {
 
 /*Header buttons*/
 main section:nth-of-type(2)>div>article:nth-child(1)>header>button{
-    background-color: rgb(246, 134, 31, 0.1);
+    background-color: rgba(246, 134, 31,1);
     height: 4em;
     width: 4em;
     cursor: pointer;
     overflow: hidden;
     color: white
+    
 }
 main section:nth-of-type(2)>div>article:nth-child(2)>header>button{
     background-color: #f6861f;
@@ -157,12 +173,15 @@ main section:nth-of-type(2)>div>article:nth-child(1)>header{
     background-image: url('vrst.jpg');
     background-size: cover;
     height: 10rem;
+    display: flex;
+    flex-direction: row-reverse;
     
 }
 
 main section:nth-of-type(2)>div>article:nth-of-type(2) {
     width: 30vw;
     margin: 0 1em 0  1em;
+    
 }
 
 main section:nth-of-type(2)>div>article:nth-child(2)>header{
@@ -170,6 +189,8 @@ main section:nth-of-type(2)>div>article:nth-child(2)>header{
     background-image: url('alzhmr.jpg');
     background-size: cover;
     height: 10rem;
+     display: flex;
+    flex-direction: row-reverse;
     
     
 }
@@ -179,6 +200,8 @@ main section:nth-of-type(2)>div>article:nth-child(3)>header{
     background-image: url('kndr.jpg');
     background-size: cover;
     height: 10rem;
+     display: flex;
+    flex-direction: row-reverse;
     
     
 }
