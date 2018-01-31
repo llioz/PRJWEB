@@ -1,4 +1,4 @@
-header img {
+header > a > img {
     height: 5em;
     
 }
@@ -16,6 +16,12 @@ body > header {
     padding: 0 2em;
     box-sizing: border-box;
     
+}
+
+header > img {
+    width: 2em;
+    margin: 0 1em 0 0;
+    display: none;
 }
 
 header  a {
@@ -155,4 +161,83 @@ section a {
     text-transform: uppercase;
     font-family: "DFDS bold", "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
 }
+
+
+                        
+@media (max-width: 70em) {
+
+    section:nth-of-type(1) {
+    width: 49%;
+}
+
+section:nth-of-type(2) {
+    width: 49%;
+}
+
+@media (max-width: 55em) {
+   
+    main > div {
+        flex-direction: column;
+    }
+
+    section:nth-of-type(1) {
+    width: 95%;
+    height: 25em;
+    margin-bottom: 1em;
+    }
+
+    section:nth-of-type(2) {
+    width: 95%;
+    height: 25em;
+    margin: 0;
+    }
+
+    h1 {
+        margin:4em 0 0.618em 0; 
+    }
+}
+            
+@media (max-width: 35em) {
+
+    section:nth-of-type(1) {
+    width: 100%;
+    height: 22em;
+    }
+
+    section:nth-of-type(2) {
+    width: 100%;
+    height: 22em;
+    }
+
+    h1 {
+    font-size: 1.5em;
+    margin-top: 6em;
+    }
+
+    section:nth-of-type(2) p {
+        font-size: 1em;
+    }
+
+    section a {
+        font-size: 1.414em;
+    }
+}
+    
+    header ul {
+        display: none;
+    }
+    
+   header > img {
+    display: block;
+    width: 2em;
+    }
+    
+    h2{
+        font-size: 1.3em;
+    }
+       
+}
+
+
+
 
