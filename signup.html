@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="stylesheet" href="assets/reset.css">
+    <link href="assets/fonts.css" rel="stylesheet">
+    <link href="assets/signup.css" rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+<body>
+    <header> <img src="assets/logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a></li>
+                <li>
+                    <a href="">Verhalen</a></li>
+                <li>
+                    <a href="login.html">Account</a></li>
+                <li>
+                    <a href="">Mijn leeslijst</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Aanmelden</h1>
+        <h2>We hebben een paar gegevens van je nodig.</h2>
+        <form>
+            <fieldset>
+                <legend>Gebruikersnaam <span>(minimaal 6 tekens)</span></legend>
+                <input pattern=".{6,}" placeholder="Gebruikersnaam" name="Gebruikersnaam" required="" type="text"><span class="fa fa-check" aria-hidden="true"></span>
+            </fieldset>
+            <fieldset>
+                <legend>E-mail</legend>
+                <input placeholder="voorbeeld@voorbeeld.nl" name="E-mail adres" required="" type="email"><span class="fa fa-check" aria-hidden="true"></span>
+            </fieldset>
+            <fieldset>
+                <legend>Wachtwoord <span>(minimaal 8 tekens)</span></legend>
+                <ul>
+                    <li>
+                        <label>Wachtwoord</label>
+                        <div>
+                            <input placeholder="********" pattern=".{8,}" name="password" id="password" required="" type="password"><span class="fa fa-check" aria-hidden="true"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <label>Wachtwoord bevestigen</label>
+                        <div>
+                            <input placeholder="********" pattern=".{8,}" name="password" id="confirm_password" required="" type="password">
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+            <button>Aanmelden</button>
+        </form>
+    </main>
+    <script src="https://use.fontawesome.com/47a60ca796.js"></script>
+</body>
+</html>

@@ -18,6 +18,17 @@ body > header {
     
 }
 
+header  a {
+    text-decoration: none;
+    color: dimgray;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+
 a{
     text-decoration: none;
     
@@ -143,4 +154,16 @@ section a {
     color: #fff;
     text-transform: uppercase;
     font-family: "DFDS bold", "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
+@media (min-width: 35em) {
+
+    h1{
+        font-size: 10px;
+    }
+
+    
+
 }
