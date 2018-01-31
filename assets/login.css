@@ -156,14 +156,53 @@ section a {
     font-family: "DFDS bold", "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
 }
 
+@media (max-width: 70em) {
+    main {
+    font-size: 1.414em;
+}
+}
 
+@media (max-width: 55em) {
 
-@media (min-width: 35em) {
-
-    h1{
-        font-size: 10px;
+    h1 {
+        font-size: 2em;
     }
 
-    
+    main h1 + p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 35em) {
+
+    main{
+        padding: 0;
+    }
+
+    main form {
+        font-size: 0.707em;
+        width: 100vw;
+        padding: 2em 2em;
+    }
+
+    main form fieldset legend span {
+        font-size: 0.707em;
+    }
+
+    main form input {
+        font-size: 1em;
+    }
+
+    input + span {
+        font-size: 1.5em !important;
+    }
+
+    main h1 {
+        margin: auto auto 0.618em auto;
+    }
+
+    main h1 + p {
+        display: none;
+    }
 
 }
