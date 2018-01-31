@@ -5,12 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/css.css">
-    
-    <script src="https://use.fontawesome.com/47a60ca796.js"></script>
-    
-    
     <link href="assets/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css.css">
     <title>DFDS</title>
 </head>
 
@@ -31,16 +27,13 @@
     </header>
     <main>
         <section>
-            <h1>DFDS X 99 VERHALEN</h1> 
-        </section>
+            <h1>DFDS X 99 VERHALEN</h1> </section>
         <section>
             <h2>Verder lezen</h2>
             <div>
                 <article>
                     <header>
-                        <button type="button" id="addToListButton1" onclick="addToList">
-                            <i id="icon1" class="fa fa-plus" aria-hidden="true"></i>
-                        </button> 
+                        <button type="button" id="addToListButton1" onclick="addToList"> <i id="icon1" class="fa fa-plus" aria-hidden="true"></i> </button>
                     </header>
                     <div>
                         <h3>Verrast</h3>
@@ -50,9 +43,7 @@
                 </article>
                 <article>
                     <header>
-                        <button type="button" id="addToListButton2" onclick="addToList">
-                            <i id="icon2" class="fa fa-plus" aria-hidden="true"></i>
-                        </button> 
+                        <button type="button" id="addToListButton2" onclick="addToList"> <i id="icon2" class="fa fa-plus" aria-hidden="true"></i> </button>
                     </header>
                     <div>
                         <h3>Alzheimer</h3>
@@ -62,9 +53,7 @@
                 </article>
                 <article>
                     <header>
-                        <button type="button" id="addToListButton3" onclick="addToList">
-                            <i id="icon3" class="fa fa-plus" aria-hidden="true"></i>
-                        </button> 
+                        <button type="button" id="addToListButton3" onclick="addToList"> <i id="icon3" class="fa fa-plus" aria-hidden="true"></i> </button>
                     </header>
                     <div>
                         <h3>Kinderboek</h3>
@@ -75,43 +64,24 @@
             </div>
         </section>
         <section>
-            <div>
+                <input type="text" placeholder="Zoek een verhaal">
                 <div>
-                    <input type="text" placeholder="What are you looking for?">
-                    <div class="dropdown">
-                        <button class="dropbtn">Leesduur</button>
-                        <div class="dropdown-content">
-                            <input type="range" min="1" max="20" value="10"> 
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">Thema</button>
-                        <div class="dropdown-content">
-                            <div class="row-one">
-                                <label class="container">Fictie
-                                    <input type="checkbox" checked="checked"> <span class="checkmark"> </span> 
-                                </label>
-                                <label class="container">Realiteit
-                                    <input type="checkbox" checked="checked"> <span class="checkmark"> </span>
-                                 </label>
-                                 <label class="container">Geloof
-                                    <input type="checkbox" checked="checked"> <span class="checkmark"> </span> </label>
-                            </div>
-                            <div class="row-two">
-                                <label class="container">Sport
-                                    <input type="checkbox" checked="checked"> <span class="checkmark"> </span> </label>
-                                <label class="container">Muziek
-                                    <input type="checkbox" checked="checked"> <span class="checkmark"> </span> </label>
-                                <label class="container">Politiek
-                                    <input type="checkbox" checked="checked"> <span class="checkmark"> </span> </label>
-                            </div>
-                        </div>
-                    </div>
+                    <button>Thema</button>
+                    <ul>
+                        <li><input type="checkbox" name="thema" value="Realiteit">Realiteit</li>
+                        <li><input type="checkbox" name="thema" value="Realiteit">Fictie</li>
+                        <li><input type="checkbox" name="thema" value="Realiteit">Geloof</li>
+                        <li><input type="checkbox" name="thema" value="Realiteit">Muziek</li>
+                        <li><input type="checkbox" name="thema" value="Realiteit">Politiek</li>
+                        <li><input type="checkbox" name="thema" value="Realiteit">Sport</li>
+                    </ul>
                 </div>
-            </div>
+                <div>
+                    <button>Leesduur</button>
+                    <input type="range" min="1" max="100" value="50">
+                </div>
         </section>
-        
-         <section>
+        <section>
             <div>
                 <article>
                     <header class="test1"></header>
@@ -137,7 +107,7 @@
                         <footer class="flex-container-footer"> <a href="#">Verder lezen</a></footer>
                     </div>
                 </article>
-                 <article>
+                <article>
                     <header class="test4"></header>
                     <div>
                         <h3>Kinderboek</h3>
@@ -166,7 +136,8 @@
 
 <p>Ontdek verhalen</p>
 -->
-<script src="assets/script.js"></script>
+    <script src="https://use.fontawesome.com/47a60ca796.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

@@ -17,3 +17,5 @@ function iconFunction(buttonId) {
         }
     }
 }
+
+//mediaqueries&classlists gebruiken
