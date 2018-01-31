@@ -40,7 +40,7 @@ font-family: "DFDS bold";
 color: #002b45;
 width: 100%;
 height: 1em;
-margin: 20vh 0 0.618em 0;
+margin: 25vh 0 0.618em 0;
 }
 
 main {
@@ -50,4 +50,97 @@ main {
     width: 100%;
     text-align: center;
     padding: 0 0 10vh 0;
+}
+
+main > div{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+section:nth-of-type(1) {
+    width: 39%;
+    height: 25em;
+}
+
+
+section:nth-of-type(2) {
+    width: 59%;
+    height: 25em;
+}
+section {
+    background-color: #fff;
+    text-align: left;
+    margin: 2em auto 10vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+div > section > div:nth-child(1) {
+    width: 50%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+form ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0.618em 0;
+}
+
+form input {
+    padding: 0.618em;
+    border: 1px solid #6d6f71;
+    font-size: 1em;
+}
+
+button {
+    margin: 0.5em 0 0 0;
+    font-size: 1.414em;
+    padding: 0.4em 0.6em;
+    background-color: #f6861f;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "DFDS bold", sans-serif;
+}
+
+main label {
+    font-size: 1.414em;
+    line-height: 1.618em;
+    font-family: "DFDS light", sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: "DFDS bold", sans-serif;
+    line-height: 1.618em;
+}
+
+main p {
+    font-size: 1.414em;
+    line-height: 1.618em;
+    
+}
+
+section:nth-of-type(2) p:nth-of-type(4) {
+    margin: 1.618em 0 0 0;
+}
+
+section:nth-of-type(2) span {
+    color: lightblue;
+}
+
+section a {
+  
+    font-size: 1em;
+    padding: 0.4em 0.6em;
+    background-color: #f6861f;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "DFDS bold", "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
 }
