@@ -195,6 +195,11 @@ input:valid + span {
     display: block;
 }
     
+    header > nav > ul {
+        display: none;
+    }
+    
+    
 
 }
 
@@ -226,7 +231,7 @@ input:valid + span {
         margin: auto auto 0.618em auto;
     }
 
-    header > ul {
+    header > nav > ul {
         display: none;
     }
     

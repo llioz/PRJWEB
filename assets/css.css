@@ -217,14 +217,21 @@ main section:nth-of-type(2)>div>article:nth-child(3)>header{
 article > div > p, h3   {
     
     padding: 0.5em;
+    
 }
 
 h3{
     
      font-family: "dfds-bold";
     font-size:  1.2em;
+    height: 1em;
     
     
+}
+
+article > div > p{
+    
+    height: 2em;
 }
 
 /********************/
@@ -247,7 +254,16 @@ article>div>footer{
     display: flex;
   justify-content: flex-end;
     margin-right: 0.5em;
+    align-items: center;
     
+}
+
+main section:nth-child(4) div article div footer{
+    display: flex;
+  justify-content: flex-end;
+    margin-right: 0.5em;
+    align-items: center;
+    justify-content: space-between
 }
 
 /***************/
@@ -345,6 +361,8 @@ main section:nth-child(3) > div:nth-child(3):hover > input{
 
 
 /**********************/
+
+/*
 main section:nth-of-type(4)>div:nth-of-type(1) {
     display: flex;
     flex-direction: row;
@@ -355,19 +373,38 @@ main section:nth-of-type(4)>div:nth-of-type(1) {
     
 
 }
+*/
 
-main section:nth-of-type(4)>div>article:nth-of-type(2) {
-    width: 30vw;
+
+main section:nth-of-type(4)>div:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+main section:nth-of-type(4)>div>article:nth-of-type(1) {
+    width: 50vw;
     margin: 0 1em 0  1em;
 }
+main section:nth-of-type(4)>div>article:nth-of-type(2) {
+    width: 30vw;
+    margin: 0 1em 0  0em;
+}
+
 main section:nth-of-type(4)>div>article:nth-of-type(3) {
+    width: 30vw;
+    margin: 0 1em 0  0em;
+}
+
+main section:nth-of-type(4)>div>article:nth-of-type(4) {
     width: 30vw;
     margin: 0 1em 0  0em;
 }
 
 main section:nth-of-type(4)>div>article:nth-child(1)>header{
     
-    background-image: url('vrst.jpg');
+    background-image: url('paparazzi.jpg');
     background-size: cover;
     height: 10rem;
     
@@ -376,29 +413,41 @@ main section:nth-of-type(4)>div>article:nth-child(1)>header{
 
 main section:nth-of-type(4)>div>article:nth-child(2)>header{
     
-    background-image: url('alzhmr.jpg');
+    background-image: url('london.jpg');
     background-size: cover;
-    height: 10rem;
+    height: 6rem;
     
     
 }
 
 main section:nth-of-type(4)>div>article:nth-child(3)>header{
     
-    background-image: url('kndr.jpg');
+    background-image: url('acro.gif');
     background-size: cover;
-    height: 10rem;
+    height: 6rem;
     
     
 }
 
 main section:nth-of-type(4)>div>article:nth-child(4)>header{
     
-    background-image: url('kndr.jpg');
+    background-image: url('Lange.jpg');
     background-size: cover;
-    height: 10rem;
+    height: 6rem;
     
     
+}
+
+footer > div > img{
+    display: flex;
+    height: 2em;
+    margin-left: 2em;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 
