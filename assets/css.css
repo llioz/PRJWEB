@@ -95,13 +95,13 @@ body > header {
     
 }
 
-section.stories-section article > header button.saved i.fa-plus {
+section.stories-section div > article > header button.saved i.fa-plus {
 	animation-name: save-plus;
 	animation-duration: 3s;
 	display: none;
 }
 
-section.stories-section article > header i.fa-floppy-o {
+section.stories-section div > article > header i.fa-floppy-o {
 	font-size: 1.7em;
 	margin-left: -3em;
 	display: none;
@@ -122,7 +122,7 @@ section.stories-section article > header i.fa-floppy-o {
 
 
 
-section.stories-section article > header button.saved i.fa-floppy-o {
+section.stories-section div >  article > header button.saved i.fa-floppy-o {
 	animation-name: save-floppy;
 	animation-duration: 0.4s;
 	margin-left: 0;
@@ -171,6 +171,33 @@ section article {
 
 /*Header buttons*/
 main section:nth-of-type(2)>div>article:nth-child(1)>header>button{
+    background-color: red;
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    overflow: hidden;
+    color: white
+    
+}
+main section:nth-of-type(2)>div>article:nth-child(2)>header>button{
+    background-color: red;
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    overflow: hidden;
+    color: white
+}
+main section:nth-of-type(2)>div>article:nth-child(3)>header>button{
+    background-color: red;
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    overflow: hidden;
+    color: white
+}
+
+
+main section:nth-of-type(4)>div>article:nth-child(1)>header>button{
     background-color: rgba(246, 134, 31,1);
     height: 4em;
     width: 4em;
@@ -179,7 +206,7 @@ main section:nth-of-type(2)>div>article:nth-child(1)>header>button{
     color: white
     
 }
-main section:nth-of-type(2)>div>article:nth-child(2)>header>button{
+main section:nth-of-type(4)>div>article:nth-child(2)>header>button{
     background-color: #f6861f;
     height: 4em;
     width: 4em;
@@ -187,7 +214,16 @@ main section:nth-of-type(2)>div>article:nth-child(2)>header>button{
     overflow: hidden;
     color: white
 }
-main section:nth-of-type(2)>div>article:nth-child(3)>header>button{
+main section:nth-of-type(4)>div>article:nth-child(3)>header>button{
+    background-color: #f6861f;
+    height: 4em;
+    width: 4em;
+    cursor: pointer;
+    overflow: hidden;
+    color: white
+}
+
+main section:nth-of-type(4)>div>article:nth-child(4)>header>button{
     background-color: #f6861f;
     height: 4em;
     width: 4em;
