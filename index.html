@@ -11,75 +11,101 @@
 </head>
 
 <body>
-    <header> <a href="index.html"><img src="assets/logo.png" alt="logo"></a> 
+    <header>
+        <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
         <nav>
             <ul>
-                <li>
-                    <a href="index.html">Home</a></li>
-                <li>
-                    <a href="energiek.html">Verhalen</a></li>
-                <li>
-                    <a href="login.html">Account</a></li>
-                <li>
-                    <a href="">Mijn leeslijst</a></li>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="energiek.html">Verhalen</a></li>
+                <li> <a href="login.html">Account</a></li>
+                <li> <a href="">Mijn leeslijst</a></li>
             </ul>
         </nav>
+        <img src="assets/menu_filled.png" alt="hamburger menu">
     </header>
     <main>
-        <section>
-            <h1>DFDS X 99 VERHALEN</h1> </section>
-        <section>
+        <section> </section>
+        <section class="stories-section">
             <h2>Verder lezen</h2>
             <div>
                 <article>
                     <header>
-                        <button type="button" id="addToListButton1" onclick="addToList"> <i id="icon1" class="fa fa-plus" aria-hidden="true"></i> </button>
+                        <button class="save-button"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
                     </header>
                     <div>
                         <h3>Verrast</h3>
-                        <p>Precies op het moment dat ik de bus uit stap valt mijn zoon in slaap! Wat een timing, ongefuckinglooflijk! Gelukkig slaapt hij vrij diep, want wat een chaos op het Centraal Station zeg! Overal opgebroken wegen en borende wegwerkers en heiende heipalen!</p>
-                        <footer> <a href="#">Verder lezen</a></footer>
+                        <p>Precies op het moment dat ik de bus uit stap valt mijn zoon in slaap! Wat een timing, ongefuckinglooflijk![...]</p>
+                        <footer> <a href="energiek.html">Verder lezen</a></footer>
                     </div>
                 </article>
                 <article>
                     <header>
-                        <button type="button" id="addToListButton2" onclick="addToList"> <i id="icon2" class="fa fa-plus" aria-hidden="true"></i> </button>
+                        <button class="save-button"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
                     </header>
                     <div>
                         <h3>Alzheimer</h3>
-                        <p>Precies op het moment dat ik de bus uit stap valt mijn zoon in slaap! Wat een timing, ongefuckinglooflijk! Gelukkig slaapt hij vrij diep, want wat een chaos op het Centraal Station zeg! Overal opgebroken wegen en borende wegwerkers en heiende heipalen </p>
-                        <footer> <a href="#">Verder lezen</a></footer>
+                        <p>Ik stap uit, euh… Hoe heet het? Zo’n vervoersdinges op wielen. Van de gemeente. Wit met blauw.[...] </p>
+                        <footer> <a href="vaag.html">Verder lezen</a></footer>
                     </div>
                 </article>
                 <article>
                     <header>
-                        <button type="button" id="addToListButton3" onclick="addToList"> <i id="icon3" class="fa fa-plus" aria-hidden="true"></i> </button>
+                        <button class="save-button"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
                     </header>
                     <div>
                         <h3>Kinderboek</h3>
-                        <p>Precies op het moment dat ik de bus uit stap valt mijn zoon in [...] </p>
-                        <footer> <a href="#">Verder lezen</a></footer>
+                        <p>Kijk, daar gaat Max. Dag Max! Hij stapt uit de bus. Wat duwt hij daar voo[...] </p>
+                        <footer> <a href="kinder.html">Verder lezen</a></footer>
                     </div>
                 </article>
             </div>
         </section>
         <section>
-                <input type="text" placeholder="Zoek een verhaal">
-                <div>
-                    <button>Thema</button>
+           <h1></h1>
+            <input type="text" placeholder="Zoek een verhaal">
+            <ul>
+                <li class="genre">
+                    <input type="checkbox" id="genre" name="genre" value="Genre">
+                    <label class="genre" for="genre">Genre</label>
                     <ul>
-                        <li><input type="checkbox" name="thema" value="Realiteit">Realiteit</li>
-                        <li><input type="checkbox" name="thema" value="Realiteit">Fictie</li>
-                        <li><input type="checkbox" name="thema" value="Realiteit">Geloof</li>
-                        <li><input type="checkbox" name="thema" value="Realiteit">Muziek</li>
-                        <li><input type="checkbox" name="thema" value="Realiteit">Politiek</li>
-                        <li><input type="checkbox" name="thema" value="Realiteit">Sport</li>
+                        <li>
+                            <input type="checkbox" id="opinie" name="opinie" value="Opinie">
+                            <label for="opinie">Fictie</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="maatschappij" name="maatschappij" value="Maatschappij">
+                            <label for="maatschappij">Geloof</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="politiek" name="politiek" value="Politiek">
+                            <label for="politiek">Muziek</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="religie" name="religie" value="Religie">
+                            <label for="religie">Politiek</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="politiek" name="politiek" value="Politiek">
+                            <label for="politiek">Sport</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="religie" name="religie" value="Religie">
+                            <label for="religie">Realiteit</label>
+                        </li>
                     </ul>
-                </div>
-                <div>
-                    <button>Leesduur</button>
-                    <input type="range" min="1" max="100" value="50">
-                </div>
+            </ul>
+             
+              <ul>
+            <li class="sorteer">
+              <input type="checkbox" id="sorteer" name="opinie" value="Opinie">
+              <label class="sorteer" for="sorteer">Sorteer</label>
+              <ul>
+                <li>
+                <li><input type="range" min="1" max="100" value="50" class="slider"></li>
+              </ul>
+            </li>
+          </ul>     
+                    
         </section>
         <section>
             <div>
@@ -88,31 +114,32 @@
                     <div>
                         <h3>Beroemd</h3>
                         <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘M[...]</p>
-                        <footer > <div><img src="assets/icons8-clock.png" alt="tijd"><span>10min</span></div><a href="#">Lezen ></a></footer>
+                        <footer>
+                            <div><img src="assets/icons8-clock.png" alt="tijd"><span>10min</span></div><a href="#">Lezen ></a></footer>
                     </div>
                 </article>
                 <article>
                     <header></header>
                     <div>
                         <h3>Touristische route</h3>
-                       
-                        <footer ><div><img src="assets/icons8-clock.png" alt="tijd"><span>10min</span></div> <a href="#">Lezen </a></footer>
+                        <footer>
+                            <div><img src="assets/icons8-clock.png" alt="tijd"><span>10min</span></div> <a href="touris.html">Lezen </a></footer>
                     </div>
                 </article>
                 <article>
-                    <header ></header>
+                    <header></header>
                     <div>
                         <h3>Acrostichon</h3>
-                        
-                        <footer > <div><img src="assets/icons8-clock.png" alt="tijd"><span>10min</span></div><a href="#">Lezen</a></footer>
+                        <footer>
+                            <div><img src="assets/icons8-clock.png" alt="tijd"><span>10min</span></div><a href="#">Lezen</a></footer>
                     </div>
                 </article>
                 <article>
                     <header class="test4"></header>
                     <div>
                         <h3>Lange Frans</h3>
-                    
-                        <footer > <div><img src="assets/icons8-clock.png" alt="tijd"><span>10min</span></div> <a href="#">Lezen</a></footer>
+                        <footer>
+                            <div><img src="assets/icons8-clock.png" alt="tijd"><span>10min</span></div> <a href="#">Lezen</a></footer>
                     </div>
                 </article>
             </div>
@@ -138,6 +165,7 @@
 -->
     <script src="https://use.fontawesome.com/47a60ca796.js"></script>
     <script src="assets/script.js"></script>
+    <script src="assets/uitklapper.js"></script>
 </body>
 
 </html>
